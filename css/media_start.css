@@ -1,0 +1,299 @@
+@media screen and (min-width: 375px) {
+    .carousel-wrap {
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid lightgray;
+    }
+    .carousel {
+        width: 100%;
+        position: relative;
+        height: 530px;
+        z-index: 1;
+    }
+    .prev,
+    .next {
+        display: none;
+    }
+    .slide-hide {
+        visibility: hidden; 
+    }
+    .slide-active {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .carousel .slide:nth-child(1) {
+        background: url(../img/slide1mob.png) center center no-repeat,
+                    linear-gradient(to right, white, red, white);
+    }
+    .carousel .slide:nth-child(2) {
+        background: url(../img/slide2mob.png) center center no-repeat,
+                    linear-gradient(to right, white, rgb(45, 179, 231), white);
+    }
+    .carousel .slide:nth-child(3) {
+        background: url(../img/slide3mob.png) center center no-repeat,
+                    linear-gradient(to right, white, yellow, white);
+    }
+    .carousel .slide:nth-child(4) {
+        background: url(../img/slide4mob.png) center center no-repeat,
+                    linear-gradient(to right, white, rgb(41, 86, 104), white);
+    }
+    .slide a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .dots {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        z-index: 400;
+    }
+    .dot {
+        display: inline-block;
+        margin: 0 10px;
+        border: 5px solid lightgray;
+        border-radius: 50%;
+    }
+    .dot-active {
+        border-color: darkred;
+    }
+    .promo {
+        height: 240px;
+        width: 100%;
+        border-bottom: 1px solid lightgray; 
+    }
+    .promo-main {
+        height: 100%;
+    }
+    .promo-main a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url(../img/nike_m.png) center center no-repeat;
+    }
+    .sale,
+    .caps {
+        display: none;
+    }
+    .arrival {
+        width: 100%;
+        height: 600px;
+        border-bottom: 1px solid lightgray;
+        padding-top: 60px;
+        overflow: hidden;
+    }
+    .arrival h1 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .btn-arrivals {
+        display: block;
+        background-color: transparent;
+        border: 1px solid lightgray;
+        width: 220px;
+        height: 60px;
+        margin: 0 auto;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .btn-arrivals:hover {
+        border-color: red;
+        color: red;
+    }
+    .item-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: hidden;
+        height: 380px;
+    }
+    .item {
+        width: 160px;
+        height: 100%;
+        margin-bottom: 200px;
+    }
+    .item img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .item-capture {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .item-name {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .price {
+        font-weight: normal;
+    }
+    .new {
+        font-family: "Times New Roman", serif;
+        font-size: 16px;
+        font-style: italic;
+        color: lightgray;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    
+    .carousel {
+        height: 820px;
+    }
+    .dots {
+        height: 65px;
+        line-height: 65px;
+    }
+    .dot {
+        margin: 0 15px;
+    }
+    .carousel .slide:nth-child(1) {
+        background: url(../img/slide1tab.png) center center no-repeat,
+                    linear-gradient(to right, white, red, white);
+    }
+    .carousel .slide:nth-child(2) {
+        background: url(../img/slide2tab.png) center center no-repeat,
+                    linear-gradient(to right, white, rgb(45, 179, 231), white);
+    }
+    .carousel .slide:nth-child(3) {
+        background: url(../img/slide3tab.png) center center no-repeat,
+                    linear-gradient(to right, white, yellow, white);
+    }
+    .carousel .slide:nth-child(4) {
+        background: url(../img/slide4tab.png) center center no-repeat,
+                    linear-gradient(to right, white, rgb(45, 179, 231), white);
+    }
+    .promo {
+        display: flex;
+        height: 250px;
+    }
+    .sale {
+        display: block;
+        flex-grow: 1;
+    }
+    .sale a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url(../img/sale_t.png) center center no-repeat;
+        border-left: 1px solid lightgray; 
+    }
+    .promo-main {
+        flex-grow: 2;
+    }
+    .promo-main a {
+        background: url(../img/nike_t.png) center center no-repeat;
+    }
+    .arrival {
+        height: 800px;
+        padding-top: 100px;
+    }
+    .arrival h1 {
+        margin-bottom: 80px;
+    }
+    .item-wrap {
+        height: 390px;
+        padding-bottom: 120px;
+    }
+    .item {
+        width: 205px;
+        height: 390px;
+    }
+    
+}
+@media screen and (min-width: 1024px) {
+    .prev,
+    .next {
+        display: block;
+    }
+    
+    .prev,
+    .next {
+        display: initial;
+        position: absolute;
+        top: 40%;
+        z-index: 400;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
+    .carousel {
+        height: 850px;
+    }
+    .dots {
+        height: 80px;
+        line-height: 80px;
+    }
+    .carousel .slide:nth-child(1) {
+        background: url(../img/slide1.png) center center no-repeat,
+                    linear-gradient(to right, white, red, white);
+    }
+    .carousel .slide:nth-child(2) {
+        background: url(../img/slide2.png) center center no-repeat,
+                    linear-gradient(to right, white, rgb(45, 179, 231), white);
+    }
+    .carousel .slide:nth-child(3) {
+        background: url(../img/slide3.png) center center no-repeat,
+                    linear-gradient(to right, white, yellow, white);
+    }
+    .carousel .slide:nth-child(4) {
+        background: url(../img/slide4.png) center center no-repeat,
+                    linear-gradient(to right, white, rgb(45, 179, 231), white);
+    }
+    .promo {
+        height: 385px;
+    }
+    .sale {
+        display: none;
+    }
+    .caps {
+        display: block;
+        flex-grow: 1;
+        background-color: #f7f7f7;
+    }
+    .promo-main {
+        flex-grow: 1;
+    }
+    .promo-main a {
+        background: url(../img/nike_d.png) center center no-repeat;
+    }
+    .caps a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url(../img/caps_d.png) center center no-repeat;
+        border-left: 1px solid lightgray; 
+    }
+    .arrival {
+        height: 900px;
+    }
+    .item-wrap {
+        height: 445px;
+        padding-bottom: 150px;
+    }
+    .item {
+        width: 240px;
+        height: 445px;
+    }
+    .arrival h1 {
+        margin-bottom: 100px;
+    }
+    
+}
+@media screen and (min-width: 1300px) {
+    
+}

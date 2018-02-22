@@ -1,0 +1,28 @@
+body {
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.logo a {
+    font-size: 30px;
+}
+.footer-list {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.footer-list li {
+    padding: 15px 0;
+}
+
+
+

@@ -1,0 +1,148 @@
+@media screen and (min-width: 375px) { 
+    .bag-items-wrap {
+        box-sizing: border-box;
+    }
+    .bag-header {
+        width: 100%;
+        padding-left: 40px;
+        height: 55px;
+        line-height: 55px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        box-sizing: border-box;
+    }
+    .bag-header h1 {
+        width: 200px;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .item {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0;
+        box-sizing: border-box;
+    }
+    .item img,
+    .item > div {
+        width: 160px;
+        height: 225px;
+    }
+    
+    .bag-item-description {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    .bag-item-description h2 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .bag-item-description input {
+        color: red;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 15px 0;
+    }
+    .bag-item-description div:not(.bag-price) {
+        font-weight: normal;
+        margin: 10px 0;
+    }
+    .bag-price {
+        margin-bottom: 30px;
+    }
+    .bag-count span:nth-child(even) {
+        color: red;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+    .bag-info {
+        width: 100%;
+        height: 55px;
+        background-color: #f7f7f7;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 17px;
+        box-sizing: border-box;
+    }
+    .bag-info span {
+        color: red;
+    }
+    .bag-controls {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 0;
+    }
+    .bag-controls div {
+        font-family: 'Roboto', sans-serif;
+    }
+    .btn-buy {
+        display: block;
+        background-color: transparent;
+        border: 1px solid lightgray;
+        width: 140px;
+        height: 60px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .btn-buy:hover {
+        border-color: red;
+        color: red;
+    }
+    .cost {
+        text-align: center;
+    }
+    .cost output {
+        font-weight: bold;
+    }
+}
+@media screen and (min-width: 768px) { 
+    .bag-header {
+        height: 65px;
+        line-height: 65px;
+    }
+    .bag-header h1 {
+        font-size: 20px;
+    }
+    .btn-buy {
+        width: 220px;
+    }
+    .bag-info {
+        height: 40px;
+        line-height: 40px;
+        padding-top: 0;
+        font-size: 11px;
+    }
+    .bag-items-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item {
+        width: 50%;
+    }
+    .item img {
+        width: 145px;
+        height: 205px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .bag-header h1 {
+        font-size: 26px;
+    }
+    .item img {
+        width: 240px;
+        height: 340px;
+    }
+}    
+@media screen and (min-width: 1300px) {
+    
+}

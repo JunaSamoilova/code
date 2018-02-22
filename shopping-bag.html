@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/media_bag.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="top-menu">
+                <div class="logo">
+                    <a href="start.html">
+                        <h1 class="logo-mob">TL</h1>
+                        <h1 class="logo-tab">Template</h1>
+                    </a>
+                </div>
+                <div class="header-buttons">
+                    <div class="login">
+                        <a href="#">E-mail sign up</a>
+                    </div>
+                    <div class="bag">
+                        <a href="#">
+                            <img src="img/bag_ico.jpg" alt="">Bag (10)</a>
+                    </div>
+                    <div class="menu menu-close" id="menu">
+                    </div>
+                </div>
+
+            </div>
+            <nav class="navigation hide" id="navigation">
+                <ul>
+                    <li>
+                        <a href="#">Women</a>
+                    </li>
+                    <li>
+                        <a href="#">Man</a>
+                    </li>
+                    <li>
+                        <a href="#">Handbags</a>
+                    </li>
+                    <li>
+                        <a href="#">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#">Sale</a>
+                    </li>
+                    <li>
+                        <a href="#">New Arrivals</a>
+                    </li>
+                    <li>
+                        <a href="#">Clearance</a>
+                    </li>
+                    <li>
+                        <a href="#">Store locator</a>
+                    </li>
+                </ul>
+                <div class="search">
+                    <input type="search" name="" id="search_field" placeholder="Style name" class="search-hide">
+                    <img src="img/search.png" alt="" id="search_btn">
+                </div>
+            </nav>
+        </header>
+        <div class="bag-header">
+            <h1>Shopping bag</h1>
+        </div>
+        <section class="bag-items-wrap">
+            <div class="item">
+                <img src="img/item1.png" alt="" class="item-img">
+                <div class="bag-item-description">
+                    <h2>Only Skinny
+                        <br>Jeans</h2>
+                    <div class="bag-price">&#163; 65.50</div>
+                    <div class="bag-color">
+                        <span>Color: </span>
+                        <span>Phillipa wash</span>
+                    </div>
+                    <div class="bag-size">
+                        <span>Size: </span>
+                        <span>UK 17</span>
+                    </div>
+                    <div class="bag-count">
+                        <span>Quantity: </span>
+                        <span>+</span>
+                        <output id="count">0</output>
+                        <span>-</span>
+                    </div>
+                    <input type="button" value="Remove item">
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/item10.png" alt="">
+                <div class="bag-item-description">
+                    <h2>Paul &#38; Joe Sister
+                        <br> Jumper with Neon
+                        <br> Trims
+                    </h2>
+                    <div class="bag-price">&#163; 19.75</div>
+                    <div class="bag-color">
+                        <span>Color:</span>
+                        <span>Blue</span>
+                    </div>
+                    <div class="bag-size">
+                        <span>Size: </span>
+                        <span>UK 18</span>
+                    </div>
+                    <div class="bag-count">
+                        <span>Quantity: </span>
+                        <span>+</span>
+                        <output id="count">0</output>
+                        <span>-</span>
+                    </div>
+                    <input type="button" value="Remove item">
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/item6.png" alt="">
+                <div class="bag-item-description">
+                    <h2>Boyfriend T-Shirt
+                        <br>with Bohemian Print</h2>
+                    <div class="bag-price">&#163; 90.00</div>
+                    <div class="bag-color">
+                        <span>Color: </span>
+                        <span>Black</span>
+                    </div>
+                    <div class="bag-size">
+                        <span>Size: </span>
+                        <span>UK 18</span>
+                    </div>
+                    <div class="bag-count">
+                        <span>Quantity: </span>
+                        <span>+</span>
+                        <output id="count">0</output>
+                        <span>-</span>
+                    </div>
+                    <input type="button" value="Remove item">
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/item2.png" alt="">
+                <div class="bag-item-description">
+                    <h2>Neck Knitted
+                        <br>Jumper</h2>
+                    <div class="bag-price">&#163; 76.25</div>
+                    <div class="bag-color">
+                        <span>Color: </span>
+                        <span>Green</span>
+                    </div>
+                    <div class="bag-size">
+                        <span>Size: </span>
+                        <span>UK 19</span>
+                    </div>
+                    <div class="bag-count">
+                        <span>Quantity: </span>
+                        <span>+</span>
+                        <output id="count">0</output>
+                        <span>-</span>
+                    </div>
+                    <input type="button" value="Remove item">
+                </div>
+            </div>
+        </section>
+        <p class="bag-info">
+            You've qualified for Free UK Next Day Delivery on your order. Don't forget to enter the code
+            <span>nexday</span> at checkout
+        </p>
+        <section class="bag-controls">
+            <div>Empty bag</div>
+            <input type="button" value="Buy now" class="btn-buy">
+            <div class="cost">
+                <span>Total cost</span>
+                <br>
+                <output id="total_cost">0</output>
+            </div>
+        </section>
+        <footer>
+            <section class="footer-links">
+                <div class="quick-links">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Store locator</a>
+                        </li>
+                        <li>
+                            <a href="#">Gift cards</a>
+                        </li>
+                        <li>
+                            <a href="#">Size guide</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="customer-care">
+                    <h6>Customer care</h6>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Customer servise</a>
+                        </li>
+                        <li>
+                            <a href="#">Track my order</a>
+                        </li>
+                        <li>
+                            <a href="#">Return policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Shipping and delivery</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="footer-social">
+                <div class="questions">
+                    <h6>Questions</h6>
+                    <div>
+                        <img src="img/twi_link.jpg" alt=""> Tweet us
+                        <a href="#" class="twi_link">@template</a>
+                    </div>
+                </div>
+                <div class="phone">
+                    <h6>Order by phone</h6>
+                    <div>8-800-409-47-12</div>
+                </div>
+                <div class="social-networks">
+                    <p>We have our own delivery service which
+                        <br> operates in 23 major European cities. Delivery
+                        <br> time - 3-5 days.</p>
+                    <div class="social-link1">
+                        <a href="#">
+                            <img src="img/fb_soc.jpg" alt="facebook">
+                        </a>
+                        <a href="#">
+                            <img src="img/twi_soc.jpg" alt="twitter">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-info">
+                <p class="rights">(c) 2010-2015. Template Group inc.</p>
+                <div class="counter">
+                    Share
+                    <img src="img/share_flag.png" alt="">
+                </div>
+                <ul class="info-links">
+                    <li>
+                        <a href="#">Legal notice</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Site map</a>
+                    </li>
+                </ul>
+                <div class="social-link2">
+                    <a href="#">
+                        <img src="img/fb_soc.jpg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="img/twi_soc.jpg" alt="twitter">
+                    </a>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
